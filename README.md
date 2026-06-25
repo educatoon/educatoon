@@ -1,4 +1,4 @@
-# EDUCATOON
+# EDUCATOON: APRENDA DE FORMA DIVERTIDA
 
 ![Tela inicial](./docs/home.PNG)
 
