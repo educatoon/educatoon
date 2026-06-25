@@ -105,13 +105,13 @@ Responsável pela experiência do usuário:
 ![Tela inicial](./docs/home.PNG)
 
 ### Personagens
-![Personagens](./docs/personagens.png)
+![Personagens](./docs/personagens.PNG)
 
 ### Módulos
-![Módulos](./docs/modulos.png)
+![Módulos](./docs/modulos.PNG)
 
 ### Histórias em quadrinhos
-![Histórias em quadrinhos](./docs/comics.png)
+![Histórias em quadrinhos](./docs/comics.PNG)
 
 ---
 
