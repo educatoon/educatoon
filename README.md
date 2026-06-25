@@ -102,7 +102,7 @@ Responsável pela experiência do usuário:
 ## 📷 Interface da Plataforma
 
 ### Tela inicial
-![Tela inicial](./docs/home.png)
+![Tela inicial](./docs/home.PNG)
 
 ### Personagens
 ![Personagens](./docs/personagens.png)
