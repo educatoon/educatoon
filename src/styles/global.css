@@ -1,0 +1,45 @@
+@import './tokens/typography.css';
+@import './tokens/spacing.css';
+@import './theme.css';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-md);
+    line-height: var(--line-height-normal);
+    color: var(--text-body);
+    background: linear-gradient(170deg, var(--bg-primary) 14%, var(--bg-secondary) 79%);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,78 @@
+.benefits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sectionTitle {
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-3xl);
+    color: var(--text-heading);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-lg);
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--spacing-lg);
+    width: 100%;
+}
+
+.card {
+    flex: 1;
+    background-color: var(--tertiary);
+    border: 2px solid var(--border-card);
+    border-radius: 15px;
+    padding: var(--spacing-xl);
+    transition: transform 300ms ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.cardImage {
+    width: 80px;
+    height: 80px;
+    margin-bottom: var(--spacing-lg);
+}
+
+.cardTitle {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--secondary-lighter);
+    margin-bottom: var(--spacing-md);
+    font-family: var(--font-family-heading);
+}
+
+.cardText {
+    font-size: var(--font-size-md);
+    color: var(--color-white);
+    font-family: var(--font-family-base);
+    line-height: var(--line-height-normal);
+}
+
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+
+    .sectionTitle {
+        font-size: var(--font-size-2xl);
+    }
+
+    .cardTitle {
+        font-size: var(--font-size-xl);
+    }
+
+    .cardText {
+        font-size: var(--font-size-sm);
+    }
+
+    .card {
+        padding: var(--spacing-lg);
+    }
+}

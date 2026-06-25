@@ -1,0 +1,62 @@
+.container {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content {
+    background: var(--bg-card);
+    border-radius: 24px;
+    padding: 48px;
+    box-shadow: 0 4px 30px var(--overlay-light);
+    border: 2px solid var(--secondary);
+}
+
+.icon {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+.message {
+    font-family: 'Baloo 2', cursive;
+    font-size: 28px;
+    color: var(--text-heading);
+    margin-bottom: 24px;
+}
+
+.finishButton {
+    padding: 12px 40px;
+    border: none;
+    border-radius: 25px;
+    background: var(--secondary);
+    color: var(--text-inverse);
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.finishButton:hover {
+    transform: scale(1.05);
+    background: var(--secondary-hover);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 40px 16px;
+    }
+
+    .content {
+        padding: 32px 20px;
+    }
+
+    .message {
+        font-size: 22px;
+    }
+
+    .icon {
+        font-size: 48px;
+    }
+}

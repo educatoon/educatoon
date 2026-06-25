@@ -1,0 +1,13 @@
+.input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+    background-color: #F3F0F8;
+    font-size: var(--font-size-md);
+    outline: none;
+}
+
+.input:focus {
+    border-color: var(--primary);
+}

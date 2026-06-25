@@ -1,0 +1,61 @@
+.reader {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0 60px;
+}
+
+.progressBar {
+    position: sticky;
+    top: 0;
+    height: 4px;
+    background: var(--border-primary);
+    border-radius: 2px;
+    margin-bottom: 24px;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.progressFill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary), var(--tertiary));
+    border-radius: 2px;
+    transition: width 0.5s ease;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+.loading p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: var(--text-tertiary);
+}
+
+.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+.error p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: var(--error);
+}
+
+@media (max-width: 768px) {
+    .reader {
+        padding: 12px 0 40px;
+    }
+}

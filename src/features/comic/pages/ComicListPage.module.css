@@ -1,0 +1,75 @@
+.comicPage {
+    min-height: 100vh;
+    background-image: url('/src/assets/illustrations/backgrounds/select-comic-bg.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    background-color: var(--bg-primary);
+}
+
+.pageTitle {
+    display: inline-block;
+    font-family: 'Baloo 2', cursive;
+    font-weight: 600;
+    font-size: 26px;
+    color: #6752EB;
+    background-color: #ece8ff;
+    padding: 5px 25px;
+    border-radius: 50px;
+    margin: 30px auto 0;
+    text-align: center;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--bg-primary);
+}
+
+.loading p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: var(--text-tertiary);
+}
+
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 20px;
+    background: var(--bg-primary);
+}
+
+.error p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: var(--text-tertiary);
+}
+
+.error button {
+    padding: 10px 30px;
+    background: var(--primary);
+    color: var(--text-inverse);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    transition: background 0.3s ease;
+}
+
+.error button:hover {
+    background: var(--primary-hover);
+}
+
+@media (max-width: 768px) {
+    .pageTitle {
+        font-size: 20px;
+        padding: 4px 18px;
+        margin-top: 20px;
+    }
+}

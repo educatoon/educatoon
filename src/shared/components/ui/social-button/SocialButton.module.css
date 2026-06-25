@@ -1,0 +1,19 @@
+.button {
+    width: 45px;
+    height: 45px;
+    border-radius: var(--radius-full);
+    background-color: var(--color-gray-100);
+    border: 1px solid var(--color-gray-300);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button:hover {
+    background-color: var(--color-gray-300);
+}
+
+.button img {
+    width: 50%;
+    height: 50%;
+}

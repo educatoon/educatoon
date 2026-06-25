@@ -1,0 +1,52 @@
+.filters {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    flex-wrap: wrap;
+}
+
+.filterTag {
+    flex: 1;
+    min-width: 80px;
+    padding: 8px 15px;
+    text-align: center;
+    border: 1px solid #6752EB;
+    border-radius: 25px;
+    color: #6752EB;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.filterTag:hover {
+    background: rgba(103, 82, 235, 0.1);
+}
+
+.active {
+    background: #6752EB;
+    color: #fff;
+}
+
+.active:hover {
+    background: #5a46e6;
+}
+
+@media (max-width: 768px) {
+    .filters {
+        width: 95%;
+        gap: 6px;
+    }
+
+    .filterTag {
+        font-size: 12px;
+        padding: 6px 10px;
+        min-width: 60px;
+    }
+}

@@ -1,0 +1,187 @@
+.selector {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.default {
+    padding: 8px 0;
+}
+
+.default .select {
+    padding: 10px 20px;
+    border: 2px solid var(--primary);
+    border-radius: 25px;
+    background-color: var(--bg-primary);
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 140px;
+}
+
+.default .select:hover:not(:disabled) {
+    border-color: var(--primary-hover);
+    box-shadow: 0 2px 12px var(--overlay-light);
+}
+
+.default .select:focus {
+    outline: none;
+    border-color: var(--primary-hover);
+    box-shadow: 0 0 0 3px var(--primary-subtle);
+}
+
+.default .select:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.default .label {
+    font-weight: 600;
+    color: var(--text-heading);
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.compact {
+    gap: 8px;
+}
+
+.compact .select {
+    padding: 6px 14px;
+    border: 1.5px solid var(--primary);
+    border-radius: 20px;
+    background-color: var(--bg-primary);
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 100px;
+}
+
+.compact .select:hover:not(:disabled) {
+    border-color: var(--primary-hover);
+    box-shadow: 0 2px 8px var(--overlay-light);
+}
+
+.compact .select:focus {
+    outline: none;
+    border-color: var(--primary-hover);
+    box-shadow: 0 0 0 2px var(--primary-subtle);
+}
+
+.compact .label {
+    font-weight: 500;
+    color: var(--text-tertiary);
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    gap: 8px;
+    background: transparent;
+}
+
+.navbar .selectWrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar .select {
+    padding: 6px 40px 6px 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.15);
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-inverse);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 100px;
+    backdrop-filter: blur(10px);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.navbar .arrowIcon {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    width: 20px;
+    height: 20px;
+}
+
+.navbar .select option {
+    padding: 8px 16px;
+    margin-top: 8px;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: var(--text-primary);
+    border-radius: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.navbar .select optgroup,
+.navbar .select option:checked {
+    background-color: var(--primary);
+    color: white;
+}
+
+.navbar .select:hover:not(:disabled) {
+    border-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.navbar .select:focus {
+    outline: none;
+    border-color: var(--text-inverse);
+    box-shadow: 0 0 0 2px var(--overlay-light);
+}
+
+.navbar .select:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.navbar .label {
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 768px) {
+    .default .select {
+        font-size: 14px;
+        padding: 8px 16px;
+        min-width: 110px;
+    }
+
+    .default .label {
+        font-size: 14px;
+    }
+
+    .compact .select {
+        font-size: 12px;
+        padding: 4px 12px;
+        min-width: 80px;
+    }
+
+    .navbar .select {
+        font-size: 12px;
+        padding: 4px 40px 4px 12px;
+        min-width: 80px;
+    }
+
+    .navbar .arrowIcon {
+        right: 12px;
+        width: 16px;
+        height: 16px;
+    }
+}

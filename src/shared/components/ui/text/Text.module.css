@@ -1,0 +1,47 @@
+.pageTitle {
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-5xl);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-sm);
+    color: var(--text-heading);
+}
+
+.sectionTitle {
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-semibold);
+    color: var(--text-heading);
+}
+
+.cardTitle {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    color: var(--text-heading);
+}
+
+.body {
+    font-size: var(--font-size-md);
+    line-height: var(--line-lg);
+    color: var(--text-body);
+}
+
+.label {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--text-body);
+}
+
+.button {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-semibold);
+}
+
+.caption {
+    font-size: var(--font-size-xs);
+    color: var(--text-muted);
+}
+
+.helper {
+    font-size: var(--font-size-xs);
+    color: var(--text-muted);
+}

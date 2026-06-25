@@ -1,0 +1,46 @@
+.grid {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.col {
+    flex: 1;
+    min-width: 0;
+}
+
+.empty {
+    text-align: center;
+    padding: 40px;
+    color: var(--text-tertiary);
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        width: 95%;
+    }
+
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .col {
+        flex: 1 1 calc(50% - 5px);
+        min-width: calc(50% - 5px);
+    }
+}
+
+@media (max-width: 480px) {
+    .col {
+        flex: 1 1 100%;
+        min-width: 100%;
+    }
+}

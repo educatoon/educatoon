@@ -1,0 +1,267 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    padding: 10px 0;
+    backdrop-filter: blur(12px);
+    transition: all 0.3s ease;
+}
+
+.navbarContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+
+.leftSection {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logoLink {
+    text-decoration: none;
+}
+
+.logoText {
+    font-family: 'Baloo 2', Verdana;
+    font-weight: 700;
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.centerSection {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightSection {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.searchWrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.searchForm {
+    animation: slideIn 0.3s ease forwards;
+    margin-right: 5px;
+}
+
+.searchInput {
+    padding: 8px 16px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    width: 200px;
+    transition: all 0.3s ease;
+}
+
+.searchInput::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.searchInput:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.iconButton {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.iconButton:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.iconButton svg {
+    width: 20px;
+    height: 20px;
+}
+
+.searchActive {
+    background: rgba(255, 255, 255, 0.8) !important;
+    color: var(--text-primary) !important;
+}
+
+.searchActive:hover {
+    background: rgba(255, 255, 255, 1) !important;
+}
+
+.userButton {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 4px 16px 4px 4px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.userButton:hover {
+    background-color: rgba(255, 255, 255, 0.4) !important;
+    border-color: rgba(255, 255, 255, 0.4);
+    transform: scale(1.02);
+}
+
+.userAvatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--text-inverse);
+}
+
+.userAvatar svg {
+    width: 18px;
+    height: 18px;
+}
+
+.userName {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+        width: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+        width: 200px;
+    }
+}
+
+@media (max-width: 992px) {
+    .centerSection {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 8px 0;
+    }
+
+    .logoText {
+        font-size: 22px;
+    }
+
+    .rightSection {
+        gap: 8px;
+    }
+
+    .iconButton {
+        width: 36px;
+        height: 36px;
+    }
+
+    .iconButton svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .userButton {
+        padding: 2px 12px 2px 2px;
+    }
+
+    .userAvatar {
+        width: 28px;
+        height: 28px;
+    }
+
+    .userAvatar svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    .userName {
+        font-size: 12px;
+    }
+
+    .searchInput {
+        width: 150px;
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: scale(0.9);
+            width: 0;
+        }
+
+        to {
+            opacity: 1;
+            transform: scale(1);
+            width: 150px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .userName {
+        display: none;
+    }
+
+    .userButton {
+        padding: 2px;
+    }
+
+    .searchInput {
+        width: 120px;
+    }
+
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: scale(0.9);
+            width: 0;
+        }
+
+        to {
+            opacity: 1;
+            transform: scale(1);
+            width: 120px;
+        }
+    }
+}

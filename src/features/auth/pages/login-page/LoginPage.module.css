@@ -1,0 +1,43 @@
+.container {
+    background-image: url('/src/assets//illustrations/decorative/wave-login2.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.leftSide {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightSide {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.characterImage {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 1000px) {
+    .rightSide {
+        display: none;
+    }
+
+    .leftSide {
+        width: 100%;
+    }
+}

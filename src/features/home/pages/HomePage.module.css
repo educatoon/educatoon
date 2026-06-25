@@ -1,0 +1,45 @@
+.footerBackground {
+    background-image: url('../../../assets/illustrations/decorative/wave-footer.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    height: 35vh;
+    width: 100%;
+    margin-top: -15vh;
+    position: relative;
+    z-index: -1;
+}
+
+.heroBackground {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.heroBackground img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .footerBackground {
+        height: 15vh;
+        margin-top: -5vh;
+    }
+
+    .heroBackground {
+        top: 0;
+        height: 120vh;
+        overflow: hidden;
+    }
+
+    .heroBackground img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 12% center;
+    }
+}

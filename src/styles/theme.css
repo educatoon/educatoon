@@ -1,0 +1,137 @@
+@import './tokens/colors.css';
+
+:root {
+
+    --text-primary: var(--color-gray-900);
+    --text-secondary: var(--color-gray-600);
+    --text-tertiary: var(--color-gray-500);
+    --text-heading: var(--color-deep-blue-500);
+    --text-body: var(--color-gray-600);
+    --text-muted: var(--color-gray-500);
+    --text-inverse: var(--color-white);
+
+    --primary: var(--color-blue-purple-500);
+    --primary-hover: var(--color-blue-purple-600);
+    --primary-active: var(--color-blue-purple-700);
+    --primary-subtle: var(--color-blue-purple-50);
+
+    --secondary: var(--color-yellow-500);
+    --secondary-hover: var(--color-yellow-300);
+    --secondary-active: var(--color-yellow-700);
+    --secondary-subtle: var(--color-yellow-50);
+    --secondary-light: var(--color-yellow-100);
+    --secondary-lighter: var(--color-yellow-400);
+    --secondary-dark: var(--color-yellow-600);
+    --secondary-darker: var(--color-yellow-900);
+    --secondary-contrast: var(--color-yellow-400);
+
+    --tertiary: var(--color-light-purple-500);
+    --tertiary-hover: var(--color-light-purple-600);
+    --tertiary-active: var(--color-light-purple-700);
+    --tertiary-subtle: var(--color-light-purple-50);
+
+    --accent: var(--color-cyan-500);
+    --accent-hover: var(--color-cyan-600);
+    --accent-active: var(--color-cyan-700);
+    --accent-subtle: var(--color-cyan-50);
+
+    --bg-primary: var(--color-white);
+    --bg-secondary: var(--color-gray-50);
+    --bg-tertiary: var(--color-light-purple);
+    --bg-card: var(--color-white);
+    --bg-inverse: var(--color-gray-900);
+
+    --link: var(--primary);
+    --link-hover: var(--primary-hover);
+    --link-active: var(--primary-active);
+    --link-visited: var(--color-blue-purple-700);
+    --link-underline: var(--border-secondary);
+
+    --border-primary: var(--color-gray-200);
+    --border-secondary: var(--color-gray-300);
+    --border-card: var(--color-gray-500);
+
+    --success: var(--color-success-500);
+    --success-hover: var(--color-success-600);
+    --success-subtle: var(--color-success-50);
+
+    --error: var(--color-error-500);
+    --error-hover: var(--color-error-600);
+    --error-subtle: var(--color-error-50);
+
+    --warning: var(--color-warning-500);
+    --warning-hover: var(--color-warning-600);
+    --warning-subtle: var(--color-warning-50);
+
+    --overlay-light: rgba(0, 0, 0, 0.1);
+    --overlay: rgba(0, 0, 0, 0.3);
+    --overlay-dark: rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] {
+
+    --text-primary: var(--color-white);
+    --text-secondary: var(--color-gray-300);
+    --text-tertiary: var(--color-gray-400);
+    --text-heading: var(--color-white);
+    --text-body: var(--color-gray-300);
+    --text-muted: var(--color-gray-400);
+    --text-inverse: var(--color-gray-900);
+
+    --primary: var(--color-blue-purple-400);
+    --primary-hover: var(--color-blue-purple-300);
+    --primary-active: var(--color-blue-purple-200);
+    --primary-subtle: rgba(113, 90, 255, 0.2);
+
+    --secondary: var(--color-yellow-400);
+    --secondary-hover: var(--color-yellow-300);
+    --secondary-active: var(--color-yellow-200);
+    --secondary-subtle: rgba(243, 183, 0, 0.2);
+    --secondary-light: var(--color-yellow-300);
+    --secondary-lighter: var(--color-yellow-200);
+    --secondary-dark: var(--color-yellow-600);
+    --secondary-darker: var(--color-yellow-700);
+    --secondary-contrast: var(--color-yellow-500);
+
+    --tertiary: var(--color-light-purple-400);
+    --tertiary-hover: var(--color-light-purple-300);
+    --tertiary-active: var(--color-light-purple-200);
+    --tertiary-subtle: rgba(166, 130, 255, 0.2);
+
+    --bg-primary: var(--color-gray-900);
+    --bg-secondary: var(--color-gray-800);
+    --bg-tertiary: var(--color-gray-700);
+    --bg-card: var(--color-gray-800);
+    --bg-inverse: var(--color-white);
+
+    --link: var(--primary);
+    --link-hover: var(--primary-hover);
+    --link-active: var(--primary-active);
+    --link-visited: var(--color-blue-purple-300);
+    --link-underline: var(--border-secondary);
+
+    --accent: var(--color-cyan-400);
+    --accent-hover: var(--color-cyan-300);
+    --accent-active: var(--color-cyan-200);
+    --accent-subtle: rgba(85, 193, 255, 0.2);
+
+    --border-primary: var(--color-gray-700);
+    --border-secondary: var(--color-gray-600);
+    --border-card: var(--color-gray-700);
+
+    --success: var(--color-success-400);
+    --success-hover: var(--color-success-300);
+    --success-subtle: rgba(16, 185, 129, 0.2);
+
+    --error: var(--color-error-400);
+    --error-hover: var(--color-error-300);
+    --error-subtle: rgba(239, 68, 68, 0.2);
+
+    --warning: var(--color-warning-400);
+    --warning-hover: var(--color-warning-300);
+    --warning-subtle: rgba(245, 158, 11, 0.2);
+
+    --overlay-light: rgba(0, 0, 0, 0.3);
+    --overlay: rgba(0, 0, 0, 0.5);
+    --overlay-dark: rgba(0, 0, 0, 0.7);
+}

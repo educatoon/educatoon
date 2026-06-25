@@ -1,0 +1,150 @@
+.loginForm {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loginForm h1 {
+    font-family: 'Baloo 2', cursive;
+    font-weight: 700;
+    color: #715AFF;
+    margin-bottom: 15px;
+}
+
+.divider {
+    color: #949494;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.error {
+    color: #ef4444;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.input {
+    width: 100%;
+    padding: 12px 16px;
+    background-color: #F3F0F8;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+.input:focus {
+    outline: 2px solid #715AFF;
+}
+
+.options {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: #949494;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.checkbox input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #715AFF;
+    cursor: pointer;
+}
+
+.forgotLink {
+    color: #949494;
+    font-size: 17px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.forgotLink:hover {
+    color: #715AFF;
+}
+
+.buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+}
+
+.btnPrimary {
+    flex: 1;
+    padding: 10px 20px;
+    background-color: #715AFF;
+    color: white;
+    border: 1px solid #715AFF;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btnPrimary:hover:not(:disabled) {
+    background-color: #5a46e6;
+    transform: translateY(-2px);
+}
+
+.btnPrimary:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.btnPrimary.loading {
+    opacity: 0.7;
+}
+
+.btnSecondary {
+    flex: 1;
+    padding: 10px 20px;
+    background-color: white;
+    color: #715AFF;
+    border: 1px solid #715AFF;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btnSecondary:hover {
+    background-color: #f5f3ff;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .loginForm {
+        width: 90%;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .options {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

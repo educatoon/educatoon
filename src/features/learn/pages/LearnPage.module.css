@@ -1,0 +1,89 @@
+.learnPage {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--accent);
+}
+
+.loading p {
+    color: var(--text-inverse);
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 20px;
+    background: var(--accent);
+}
+
+.error p {
+    color: var(--text-inverse);
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.error button {
+    padding: 10px 30px;
+    background: var(--primary);
+    color: var(--text-inverse);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    transition: background 0.3s ease;
+}
+
+.error button:hover {
+    background: var(--primary-hover);
+}
+
+.startButton {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+    z-index: 40;
+    padding: 12px 50px;
+    background: var(--secondary);
+    color: var(--text-inverse);
+    border: none;
+    border-radius: 50px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Baloo 2', cursive;
+    cursor: pointer;
+    box-shadow: 0px 4px 15px var(--overlay);
+    transition: all 0.3s ease;
+}
+
+.startButton:hover {
+    transform: translateX(-50%) scale(1.05);
+    background: var(--secondary-hover);
+    box-shadow: 0px 6px 25px var(--overlay);
+}
+
+.startButton:active {
+    transform: translateX(-50%) scale(0.95);
+}
+
+@media (max-width: 768px) {
+    .startButton {
+        padding: 10px 35px;
+        font-size: 20px;
+        bottom: 8%;
+    }
+}

@@ -1,0 +1,14 @@
+:root {
+    --text-heading: var(--color-deep-blue);
+    --text-body: var(--color-gray-500);
+    --text-muted: var(--color-gray-700);
+    --text-inverse: var(--color-white);
+
+    --primary: var(--color-blue-purple);
+    --primary-hover: var(--color-deep-blue);
+
+    --accent: var(--color-yellow);
+
+    --card-bg: var(--color-light-purple);
+    --card-border: var(--color-gray-700);
+}

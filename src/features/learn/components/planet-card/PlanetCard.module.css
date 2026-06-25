@@ -1,0 +1,346 @@
+.planetWrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 30;
+    transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.planet {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.planetName {
+    margin-top: 8px;
+    background: var(--overlay-dark);
+    backdrop-filter: blur(4px);
+    padding: 4px 16px;
+    border-radius: 20px;
+    color: var(--text-inverse);
+    font-weight: 600;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.left-start {
+    top: 18%;
+    left: 34%;
+    width: 6vw;
+    height: 6vw;
+    z-index: 25;
+    opacity: 0.7;
+}
+
+.left-start .planet {
+    width: 100%;
+    height: 100%;
+}
+
+.left-start .planetName {
+    font-size: 10px;
+    padding: 2px 10px;
+    margin-top: 4px;
+}
+
+.left-start:hover:not(.locked) {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.left {
+    top: 25%;
+    left: 21%;
+    width: 14vw;
+    height: 14vw;
+    z-index: 28;
+    opacity: 0.85;
+}
+
+.left .planet {
+    width: 100%;
+    height: 100%;
+}
+
+.left .planetName {
+    font-size: 12px;
+    padding: 3px 12px;
+    margin-top: 6px;
+}
+
+.left:hover:not(.locked) {
+    transform: scale(1.08);
+    opacity: 1;
+}
+
+.center {
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25vw;
+    height: 25vw;
+    max-width: 350px;
+    max-height: 350px;
+    z-index: 30;
+    cursor: pointer;
+    animation: float 3s ease-in-out infinite;
+}
+
+.center .planet {
+    width: 100%;
+    height: 100%;
+}
+
+.center .planetName {
+    font-size: 18px;
+    padding: 6px 24px;
+    margin-top: 12px;
+    background: var(--overlay-dark);
+    backdrop-filter: blur(4px);
+}
+
+.center:hover:not(.locked) {
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+.right {
+    top: 25%;
+    left: 64%;
+    width: 14vw;
+    height: 14vw;
+    z-index: 28;
+    opacity: 0.85;
+}
+
+.right .planet {
+    width: 100%;
+    height: 100%;
+}
+
+.right .planetName {
+    font-size: 12px;
+    padding: 3px 12px;
+    margin-top: 6px;
+}
+
+.right:hover:not(.locked) {
+    transform: scale(1.08);
+    opacity: 1;
+}
+
+.right-end {
+    top: 18%;
+    left: 59%;
+    width: 6vw;
+    height: 6vw;
+    z-index: 25;
+    opacity: 0.7;
+}
+
+.right-end .planet {
+    width: 100%;
+    height: 100%;
+}
+
+.right-end .planetName {
+    font-size: 10px;
+    padding: 2px 10px;
+    margin-top: 4px;
+}
+
+.right-end:hover:not(.locked) {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.lockOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--overlay-dark);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lockIcon {
+    font-size: 2vw;
+    text-shadow: 0 2px 8px var(--overlay-dark);
+}
+
+.progressBadge {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    background: var(--primary);
+    color: var(--text-inverse);
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.7vw;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.featuredBadge {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    background: var(--secondary);
+    color: var(--text-inverse);
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.8vw;
+}
+
+@keyframes float {
+    0% {
+        transform: translate(-50%, -50%) translateY(0px);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) translateY(-15px);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) translateY(0px);
+    }
+}
+
+@media (max-width: 768px) {
+    .left-start {
+        top: 20%;
+        left: 30%;
+        width: 8vw;
+        height: 8vw;
+    }
+
+    .left {
+        top: 28%;
+        left: 15%;
+        width: 17vw;
+        height: 17vw;
+    }
+
+    .center {
+        top: 42%;
+        width: 40vw;
+        height: 40vw;
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    .center .planetName {
+        font-size: 14px;
+        padding: 4px 16px;
+        margin-top: 8px;
+    }
+
+    .right {
+        top: 28%;
+        left: 69%;
+        width: 17vw;
+        height: 17vw;
+    }
+
+    .right-end {
+        top: 20%;
+        left: 61%;
+        width: 8vw;
+        height: 8vw;
+    }
+
+    .left .planetName,
+    .right .planetName {
+        font-size: 10px;
+        padding: 2px 10px;
+    }
+
+    .left-start .planetName,
+    .right-end .planetName {
+        font-size: 8px;
+        padding: 1px 6px;
+    }
+
+    .lockIcon {
+        font-size: 4vw;
+    }
+
+    .progressBadge {
+        font-size: 1.2vw;
+    }
+
+    .featuredBadge {
+        font-size: 1.5vw;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .left-start {
+        top: 18%;
+        left: 32%;
+        width: 6vw;
+        height: 6vw;
+    }
+
+    .left {
+        top: 25%;
+        left: 21%;
+        width: 11vw;
+        height: 11vw;
+    }
+
+    .center {
+        top: 43%;
+        width: 30vw;
+        height: 30vw;
+        max-width: 280px;
+        max-height: 280px;
+    }
+
+    .center .planetName {
+        font-size: 16px;
+    }
+
+    .right {
+        top: 25%;
+        left: 68%;
+        width: 11vw;
+        height: 11vw;
+    }
+
+    .right-end {
+        top: 18%;
+        left: 62%;
+        width: 6vw;
+        height: 6vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    .left-start {
+        top: 18%;
+        left: 34%;
+        width: 6vw;
+        height: 6vw;
+    }
+
+    .right-end {
+        top: 18%;
+        left: 59%;
+        width: 6vw;
+        height: 6vw;
+    }
+}

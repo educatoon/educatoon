@@ -1,0 +1,36 @@
+.socialButtons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    /* width: 32%; */
+}
+
+.socialBtn {
+    width: 45px;
+    height: 45px;
+    background-color: #F7F8FA;
+    border: 1px solid #C3C8D4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.socialBtn:hover {
+    background-color: #C3C8D4;
+    transform: translateY(-2px);
+}
+
+.socialBtn img {
+    width: 50%;
+    height: 50%;
+}
+
+@media (max-width: 768px) {
+    .socialButtons {
+        width: 50%;
+    }
+}
