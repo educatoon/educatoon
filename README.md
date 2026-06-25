@@ -1,4 +1,4 @@
-# 📘 Educatoon
+# EDUCATOON
 
 ![Tela inicial](./docs/home.PNG)
 
