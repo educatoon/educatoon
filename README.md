@@ -1,5 +1,7 @@
 # 📘 Educatoon
 
+![Tela inicial](./docs/home.PNG)
+
 > Plataforma educacional interativa baseada em histórias em quadrinhos para o ensino de matemática no Ensino Fundamental I.
 
 ---
