@@ -4,14 +4,15 @@ import { Benefits } from "../components/benefits/Benefits";
 import { Characters } from "../components/characters/Characters";
 import { Plans } from "../components/plans/Plans";
 import styles from "./HomePage.module.css";
+import heroBg from "../../../assets/illustrations/backgrounds/home-bg.svg";
 
 export function HomePage() {
     return (
         <>
             <div className={styles.heroBackground}>
                 <img
-                    src="/src/assets/illustrations/backgrounds/home-bg.svg"
-                    alt=""
+                    src={heroBg}
+                    alt="imagem de fundo apresentando uma ilustrção espacial com três personagens"
                 />
             </div>
             <Hero />
