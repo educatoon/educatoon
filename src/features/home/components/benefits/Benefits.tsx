@@ -1,5 +1,5 @@
 import { Text } from "@/shared/components/ui/text/Text";
-import graduationHat from "../../../../assets/icons/graduation-hat.svg";
+import graduationHat from "../../../../assets/Icons/graduation-hat.svg";
 import styles from "./Benefits.module.css";
 
 export function Benefits() {

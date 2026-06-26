@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Footer.module.css';
 import instagram from "../../../../assets/Icons/instagram.svg";
-import linkedin from "../../../../assets/icons/linkedin.svg";
+import linkedin from "../../../../assets/Icons/linkedin.svg";
 
 export function Footer() {
   return (
